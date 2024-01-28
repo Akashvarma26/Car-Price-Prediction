@@ -24,5 +24,20 @@ Use this to config
 git config --global user.name      
 git config --global user.email
 ```
-
+Use this to add files
+```
+git add .
+```
+To check files use
+```
+git status
+```
+Commit files using 
+```
+git commit -m "message"
+```
+To git push use
+```
+git push origin main
+```
 
