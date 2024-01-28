@@ -1,0 +1,41 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Prediction by Akash Varma Datla.</h1>
+        <form method="post" action="{{ url_for('predict') }}">
+            <label for="price">Present Price (in Lakh):</label>
+            <input type="number" step="0.01" name="price" required>
+            
+            <label for="kms_driven">Kilometers Driven:</label>
+            <input type="number" name="kms_driven" required>
+            
+            <label for="fuel">Fuel Type:</label>
+            <input type="number" step="0.01" name="fuel" required>
+            
+            <label for="seller">Seller Type:</label>
+            <input type="number" step="0.01" name="seller" required>
+            
+            <label for="transmission">Transmission Type:</label>
+            <input type="number" step="0.01" name="transmission" required>
+
+            <label for="year">years:</label>
+            <input type="number" step="0.01" name="year" required>
+            
+            <button type="submit">Predict Price</button>
+        </form>
+
+        {% if output %}
+            <p class="output">{{ output }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
