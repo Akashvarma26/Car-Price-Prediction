@@ -20,7 +20,7 @@ def predict():
         no_of_year=request.form['year']
         prediction = model.predict([[Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission,no_of_year]])
         output = round(prediction[0], 2)
-        return render_template('index.html', output="The Predicted price of the car is {} Lakh".format(output))
+        return render_template('index.html', output="The Predicted price of the car is rs {} Lakhs".format(output))
 
 
 if __name__ == '__main__':
