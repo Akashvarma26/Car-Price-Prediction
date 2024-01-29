@@ -23,5 +23,3 @@ def predict():
         return render_template('index.html', output="The Predicted price of the car is rs {} Lakhs".format(output))
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
