@@ -12,7 +12,13 @@
     <div class="container">
         <h1>Car Price Prediction by Akash Varma Datla.</h1>
         <form method="post" action="{{ url_for('predict') }}">
-            <label for="price">Present Price (in Lakh):</label>
+            <p>
+                Note:- Fill the fields with numerical values only.<br>
+                1. For Fuel type ("Petrol":2,"Diesel":1,"CNG":0)<br>
+                2. For Seller type ("Dealer":1,"Individual":0)<br>
+                3. For Transmission ("Manual":1,"Automatic":0)<br>
+            </p>
+            <label for="price">Present Price (in Lakhs):</label>
             <input type="number" step="0.01" name="price" required>
             
             <label for="kms_driven">Kilometers Driven:</label>
