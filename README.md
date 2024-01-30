@@ -51,3 +51,9 @@ Use this to run flask app and copy the local url.
 python app.py
 ```
 
+Webapp:-    
+
+![before prediction](screenshot-1.png)
+
+![after prediction](screenshot-2.png)
+
