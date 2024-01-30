@@ -1,4 +1,1 @@
 Flask
-pandas
-matplotlib
-numpy
