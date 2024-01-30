@@ -1,25 +1,27 @@
 # Car-Price-Prediction
-Car price prediction using ExtraTreesRegressor.      
+Car price prediction using ExtraTreesRegressor and building an app.      
 
-Use this to create create environment   
+You can use this to create create environment   
 ```
 conda create -p venv -y
 ```
          
-use this to activate env      
+You can use this to activate env      
 ```
 conda activate venv/
 ```      
     
-Use this to install requirements
+You can use this to install requirements
 ```
 pip install -r requirements.txt
-```
+```     
      
-     
+       
+       
+                  
 GIT COMMANDS     
     
-Use this to config
+Use this to configure git account
 ```
 git config --global user.name      
 git config --global user.email
@@ -39,5 +41,13 @@ git commit -m "message"
 To git push use
 ```
 git push origin main
+```
+    
+     
+     
+      
+Use this to run flask app and copy the local url.
+```
+python app.py
 ```
 
