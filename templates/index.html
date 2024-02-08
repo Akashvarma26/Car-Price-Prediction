@@ -11,13 +11,16 @@
 <body>
     <div class="container">
         <h1>Car Price Prediction by Akash Varma Datla.</h1>
+        <p>
+            Note:-  <br>
+            1. Fuel type(Petrol/Diesel/CNG)   <br>
+            2. Seller type(Dealer/Individual)  <br>
+            3. Transmission type(Manual/Automatic) <br>
+        </p>
         <form method="post" action="{{ url_for('predict') }}">
-            <p>
-                Note:- Fill the fields with numerical values only.<br>
-                1. For Fuel type ("Petrol":2,"Diesel":1,"CNG":0)<br>
-                2. For Seller type ("Dealer":1,"Individual":0)<br>
-                3. For Transmission ("Manual":1,"Automatic":0)<br>
-            </p>
+            <label for="car">Car Name:</label>
+            <input type="text" step="0.01" name="car" required>
+
             <label for="price">Present Price (in Lakhs):</label>
             <input type="number" step="0.01" name="price" required>
             
@@ -25,16 +28,19 @@
             <input type="number" name="kms_driven" required>
             
             <label for="fuel">Fuel Type:</label>
-            <input type="number" step="0.01" name="fuel" required>
+            <input type="text" step="0.01" name="fuel" required>
             
             <label for="seller">Seller Type:</label>
-            <input type="number" step="0.01" name="seller" required>
+            <input type="text" step="0.01" name="seller" required>
             
             <label for="transmission">Transmission Type:</label>
-            <input type="number" step="0.01" name="transmission" required>
+            <input type="text" step="0.01" name="transmission" required>
 
             <label for="year">years:</label>
             <input type="number" step="0.01" name="year" required>
+
+            <label for="own">Owner:</label>
+            <input type="text" step="0.01" name="own" required>
             
             <button type="submit">Predict Price</button>
         </form>
