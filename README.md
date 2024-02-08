@@ -53,7 +53,5 @@ python app.py
 
 Webapp:-    
 
-![before prediction](screenshot-1.png)
 
-![after prediction](screenshot-2.png)
 
