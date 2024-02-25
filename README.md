@@ -1,6 +1,9 @@
 # Car-Price-Prediction
-Car price prediction using ExtraTreesRegressor and building an app.      
+Car price prediction using ExtraTreesRegressor and building web app using Flask.  
 
+Web app link: https://car-price-predicter-akash.onrender.com
+     
+      
 You can use this to create create environment   
 ```
 conda create -p venv -y
