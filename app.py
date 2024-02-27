@@ -14,9 +14,9 @@ def predict():
     if request.method == 'POST':
         Present_Price = float(request.form['price'])
         Kms_Driven = int(request.form['kms_driven'])
-        Fuel_Type = request.form['fuel'].lower()
-        Seller_Type = request.form['seller'].lower()
-        Transmission = request.form['transmission'].lower()
+        Fuel_Type = request.form['fuel'].strip().lower()
+        Seller_Type = request.form['seller'].strip().lower()
+        Transmission = request.form['transmission'].strip().lower()
         no_of_year=int(request.form['year'])
         if Fuel_Type=="petrol":
             Fuel_Type=2
@@ -35,6 +35,5 @@ def predict():
         prediction = model.predict([[Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission,no_of_year]])
         output = round(prediction[0], 2)
         return render_template('index.html', output="The Predicted price of the car is rs {} Lakhs".format(output))
-
-#if __name__ == '__main__':
- #   app.run(debug=True)
+if __name__ == '__main__':
+   app.run(debug=True)
