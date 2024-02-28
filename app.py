@@ -21,5 +21,5 @@ def predict():
         prediction = model.predict([[Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission,no_of_year]])
         output = round(prediction[0], 2)
         return render_template('index.html', output="The Predicted price of the car is rs {} Lakhs".format(output))
-#if __name__ == '__main__':
-#   app.run(debug=True)
+if __name__ == '__main__':
+   app.run(debug=True)
