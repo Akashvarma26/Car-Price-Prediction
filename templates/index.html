@@ -28,14 +28,21 @@
             <input type="number" name="kms_driven" required>
             
             <label for="fuel">Fuel Type:</label>
-            <input type="text" step="0.01" name="fuel" required>
-            
+            <select name="fuel" id="fuel">
+                <option value=2>Petrol</option>
+                <option value=1>Diesel</option>
+                <option value=0>CNG</option>
+            </select>
             <label for="seller">Seller Type:</label>
-            <input type="text" step="0.01" name="seller" required>
-            
+            <select name="seller" id="seller">
+                <option value=1>Individual</option>
+                <option value=0>Dealer</option>
+            </select>
             <label for="transmission">Transmission Type:</label>
-            <input type="text" step="0.01" name="transmission" required>
-
+            <select name="transmission" id="transmission">
+                <option value=1>Manual</option>
+                <option value=0>Automatic</option>
+            </select>
             <label for="year">years:</label>
             <input type="number" step="0.01" name="year" required>
 
