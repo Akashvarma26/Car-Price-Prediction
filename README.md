@@ -20,7 +20,6 @@ pip install -r requirements.txt
 ```     
      
        
-       
                   
 GIT COMMANDS     
     
@@ -47,14 +46,9 @@ git push origin main
 ```
     
      
-     
       
 Use this to run flask app and copy the local url.
 ```
 python app.py
 ```
 
-Webapp:-    
-![alt text](image-1.png)
-       
-![alt text](image-2.png)
