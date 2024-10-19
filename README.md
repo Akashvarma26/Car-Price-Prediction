@@ -4,7 +4,7 @@ Car price prediction using ExtraTreesRegressor and building web app using Flask.
 Web app link: https://car-price-predicter-akash.onrender.com
      
       
-You can use this to create create environment   
+You can use this to create conda environment   
 ```
 conda create -p venv -y
 ```
@@ -47,7 +47,7 @@ git push origin main
     
      
       
-Use this to run flask app and copy the local url.
+Use this to run flask app in the local url.
 ```
 python app.py
 ```
